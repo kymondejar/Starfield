@@ -1,18 +1,18 @@
-Particle [] x = new Particle[1500];
+Particle [] z = new Particle[1500];
 void setup()
 {
   size(500, 500);
-  for (int i = 0; i < x.length; i++)
-    x[i] = new Particle();
-  x[0] = new OddballParticle();
+  for (int i = 0; i < z.length; i++)
+    z[i] = new Particle();
+  z[0] = new OddballParticle();
  
 }
 void draw()
 {
   background(0,0,0);
-  for (int i = 0; i < x.length; i++) {
-    x[i].show();
-    x[i].move();
+  for (int i = 0; i < z.length; i++) {
+    z[i].show();
+    z[i].move();
   }
 }
 class Particle
@@ -55,4 +55,3 @@ class OddballParticle extends Particle
     myY = myY + Math.sin(myAngle) / mySpeed;
   }
 }
-
